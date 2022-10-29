@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>구구단 - for문</title>
+	<link rel="stylesheet" href="css/gugudan.css">
+</head>
+<script>
+	for(var i = 2; i <= 9; i++) { // 2단~9단 표시
+		document.write("<div>");
+		document.write("<h3>" + i + "단</h3>");
+		for(var j = 1; j <= 9; j++) { // 1부터 9까지 곱하기
+			document.write(i + " X " + j + " = " + i * j + "<br>"); // i x j = i*j
+		}
+		document.write("</div>");
+	}
+	
+	var i = 0
+	do {
+		document.write('<br>반복 조건이 true이면 반복합니다. <br>'); // 명령 실행
+		i += 1;
+	} while (i < 10); // 조건이 false가 되면 반복 종료
+</script>
+<body>
+	<h1>구구단</h1>
+</body>
+</html>
