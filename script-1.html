@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<!-- HTML 분석기 -->
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>글자색 바꾸기</title>
+	<!-- CSS 분석기 -->
+	<style>
+		body { text-align:center; }
+		#heading { color:yellowgreen; }
+		#text { 
+			color:gray;
+			font-size:15px;
+		}
+	</style>	
+</head>
+<body>
+	<h1 id="heading">공부를 열심히 하자</h1>
+	<p id="text">위 텍스트를 클릭해 보세요</p>
+	<!-- 자바스크립트 해석기 -->
+	<script>
+			var heading = document.querySelector('#heading');
+			heading.onclick = function() {
+			heading.style.color = "violet";
+			}
+	</script>
+</body>
+</html>
